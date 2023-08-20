@@ -9,11 +9,16 @@ local wk = require("which-key")
 -- and hide <leader>1
 
 wk.register({
-  f = {
-    name = "file", -- optional group name
-    f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
-    n = { "New File" }, -- just a label. don't create any mapping
-    e = "Edit File", -- same as above
-    b = { function() print("bar") end, "Foobar" } -- you can also pass functions!
-  },
-}, { prefix = "<leader>" })
+	f = {
+		name = "File", -- optional group name
+		f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
+		w = { ":w<cr>", "Save file" },
+		c = { ":Telescope current_buffer_fuzzy_find<cr>", "Search in Buffer"},
+		x = { ":NvimTreeToggle<cr>", "Toggle File Explorer"}
+	},
+	g = {
+		name = "Git",
+		s = { ":Git status<cr>", "Git Status" },
+		a= {":Git add .<cr>", "Git add ." }
+	}
+},{prefix = "<leader>" })
