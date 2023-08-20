@@ -14,11 +14,18 @@ wk.register({
 		f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
 		w = { ":w<cr>", "Save file" },
 		c = { ":Telescope current_buffer_fuzzy_find<cr>", "Search in Buffer" },
-		x = { ":NvimTreeToggle<cr>", "Toggle File Explorer" }
+
 	},
 	g = {
 		name = "Git",
 		s = { ":Git status<cr>", "Git Status" },
 		a = { ":Git add .<cr>", "Git add ." }
+	},
+	t = {
+		name = "File Tree",
+		t = { ":NvimTreeToggle<cr>", "Toggle File Explorer" },
+		f = { ":NvimTreeFocus<cr>", "Focus on file explorer" },
+		s = { ":NvimTreeFindFile<cr>", "Search for a file" },
+		c = { ":NvimTreeClose<cr>", "Close Tree" }
 	}
 }, { prefix = "<leader>" })
