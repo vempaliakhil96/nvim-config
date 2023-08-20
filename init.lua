@@ -1,6 +1,4 @@
-vim.opt.number = true
-vim.g.mapleader = ' '
-vim.keymap.set('n', '<leader>w', '<cmd>write<cr>')
-vim.keymap.set('n', '<leader>wq', ':wq<cr>')
-vim.keymap.set('n', '<leader>ex', ':Texplore<cr>')
+vim.g.mapleader = " "
 require("lazy-config")
+require("mappings")
+vim.cmd.colorscheme("tokyonight")
