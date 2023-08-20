@@ -10,15 +10,15 @@ local wk = require("which-key")
 
 wk.register({
 	f = {
-		name = "File", -- optional group name
+		name = "File",                          -- optional group name
 		f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
 		w = { ":w<cr>", "Save file" },
-		c = { ":Telescope current_buffer_fuzzy_find<cr>", "Search in Buffer"},
-		x = { ":NvimTreeToggle<cr>", "Toggle File Explorer"}
+		c = { ":Telescope current_buffer_fuzzy_find<cr>", "Search in Buffer" },
+		x = { ":NvimTreeToggle<cr>", "Toggle File Explorer" }
 	},
 	g = {
 		name = "Git",
 		s = { ":Git status<cr>", "Git Status" },
-		a= {":Git add .<cr>", "Git add ." }
+		a = { ":Git add .<cr>", "Git add ." }
 	}
-},{prefix = "<leader>" })
+}, { prefix = "<leader>" })
