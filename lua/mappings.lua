@@ -13,7 +13,7 @@ wk.register({
 		name = "File",                          -- optional group name
 		f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
 		w = { ":w<cr>", "Save file" },
-		c = { ":Telescope current_buffer_fuzzy_find<cr>", "Search in Buffer" },
+		s = { ":Telescope current_buffer_fuzzy_find<cr>", "Search in Buffer" },
 
 	},
 	g = {
