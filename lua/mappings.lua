@@ -14,7 +14,6 @@ wk.register({
 		f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
 		w = { ":w<cr>", "Save file" },
 		s = { ":Telescope current_buffer_fuzzy_find<cr>", "Search in Buffer" },
-
 	},
 	g = {
 		name = "Git",
@@ -27,5 +26,12 @@ wk.register({
 		f = { ":NvimTreeFocus<cr>", "Focus on file explorer" },
 		s = { ":NvimTreeFindFile<cr>", "Search for a file" },
 		c = { ":NvimTreeClose<cr>", "Close Tree" }
+	},
+	l = {
+		name = "LSP mappings",
+		d = { ":lua vim.lsp.buf.definition()<cr>", "Jump to definition" },
+		f = { ":LspZeroFormat<cr>", "Format file" },
+		r = { ":lua vim.lsp.buf.references()<cr>", "List references"}
 	}
+
 }, { prefix = "<leader>" })
