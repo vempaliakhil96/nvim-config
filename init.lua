@@ -440,6 +440,7 @@ local servers = {
   clangd = {},
   -- gopls = {},
   pyright = {},
+  terraformls = {},
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
