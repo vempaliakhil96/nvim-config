@@ -440,9 +440,11 @@ local servers = {
   clangd = {},
   -- gopls = {},
   pyright = {},
+  terraformls = {},
   -- rust_analyzer = {},
   -- tsserver = {},
-  -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+  emmet_ls = {},
+  html = { filetypes = { 'html', 'twig', 'hbs'} },
 
   lua_ls = {
     Lua = {
