@@ -310,6 +310,7 @@ vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>tf', ":Neotree focus<cr>", { desc = '[T]ree [F]ocus' })
 vim.keymap.set('n', '<leader>tc', ":Neotree close<cr>", { desc = '[T]ree [C]lose' })
+vim.keymap.set('v', '<leader>cc', "\"+y", {desc='[C]opy to [C]lipboard'})
 
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
