@@ -452,6 +452,7 @@ local servers = {
   clangd = {},
   -- gopls = {},
   pyright = {},
+  bashls = {},
   terraformls = {},
   -- rust_analyzer = {},
   -- tsserver = {},
